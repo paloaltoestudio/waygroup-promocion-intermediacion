@@ -52,15 +52,16 @@ table {
 
 .center {
     position: relative;
+    height: 612px;
+    width: 792px;
     margin: auto;
-    width: 612px;
     margin-top: 40px;
 }
 
 .container {
     position: relative;
     width: 100%;
-    height: 792px;
+    height: 100%;
     overflow: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -83,12 +84,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 120px;
 }
 
 .logo {
-    width: 20%;
+    width: 15%;
     padding: 20px;
     padding-top: 30px;
     padding-left: 40px;
@@ -129,7 +130,7 @@ h3 {
 
 p {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Arial', sans-serif;
 }
 
@@ -140,7 +141,7 @@ ul {
 ul li {
     display: block;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     margin-bottom: 3px;
 }
@@ -177,6 +178,19 @@ ul li {
     margin-bottom: 20px;
 }
 
+.list-normal  {
+    padding-left: 20px;
+}
+
+.list-normal li {
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    list-style-position: outside;
+    list-style-type: disc;
+    display:list-item;
+}
+
 table {
     width: 100%;
     margin-bottom: 40px;
@@ -184,10 +198,12 @@ table {
 
 table td, table th {
     border: 1px solid #000;
+    font-size: 11px;
+    font-family: 'Arial', sans-serif;
 }
 
 table td {
-    padding: 10px;
+    padding: 5px;
 }
 
 table thead th {
@@ -195,6 +211,7 @@ table thead th {
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 .wrapper {
@@ -231,7 +248,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-color: #FF7500;
     margin-top: 20px;
     page-break-after: always;
@@ -243,20 +260,21 @@ footer {
     
     @page 
     {
-        size: portrait;   /* auto is the initial value */
+        size: landscape;   /* auto is the initial value */
         margin: 0mm;  /* this affects the margin in the printer settings */
         padding: 0mm;
     }
     
     .center {
-        width: auto;
+        height: 21.59cm;
+        width: 27.94cm;
         margin: 0;
         padding: 0;
     }
     
     .container {
-        height: 27.94cm;
-        width: 21.59cm;
+        height:100%;
+        width: 100%;
         background-size: 100%;
         border: none;
     }
@@ -267,6 +285,7 @@ footer {
 
     footer {
         height: 1.5cm;
+        page-break-after: always;
     }
     
 }
