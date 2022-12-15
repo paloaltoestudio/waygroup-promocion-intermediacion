@@ -108,7 +108,7 @@ header {
 
 header h1 {
     padding: 20px;
-    font: bold normal 18px 'Arial Black', sans-serif;
+    font: bold normal 28px 'Arial Black', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
@@ -142,7 +142,7 @@ p {
 }
 
 ul {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 ul li {
@@ -185,17 +185,24 @@ ul li {
     margin-bottom: 20px;
 }
 
+.title-center {
+    text-align: center;
+    color: #FF7500;
+    margin-bottom: 20px;
+}
+
 .list-normal  {
     padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #FF7500;
 }
 
 .list-normal li {
     font-family: 'Arial', sans-serif;
     font-weight: normal;
     text-transform: none;
-    list-style-position: outside;
-    list-style-type: disc;
-    display:list-item;
+    margin-bottom: 10px;
 }
 
 table {

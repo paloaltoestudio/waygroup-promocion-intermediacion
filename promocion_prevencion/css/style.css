@@ -107,7 +107,7 @@ header {
 
 header h1 {
     padding: 20px;
-    font: bold normal 18px 'Arial Black', sans-serif;
+    font: bold normal 19px 'Arial Black', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
@@ -269,6 +269,10 @@ footer {
         width: 100%;
         background-size: 100%;
         border: none;
+    }
+
+    header h1 {
+        font-size: 22px;
     }
 
     .logo img {
